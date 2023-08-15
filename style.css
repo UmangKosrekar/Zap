@@ -1,0 +1,381 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); /*Varela Round*/
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+    font-family: Varela Round;
+}
+
+body{
+    height: 500vh;
+}
+
+.normal-link{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.head{
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    height: 60vh;
+    box-shadow: 1px 5px 50px #6b6b6b;
+}
+
+.img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    filter: brightness(40%);
+}
+
+.nav-bar{
+    position: relative;
+    display: flex;
+    padding: 40px;
+    justify-content: flex-end;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.nav-bar a:hover{
+    text-shadow: 0 0 0.6em aliceblue;
+}
+
+.nav-bar ul{
+    display: flex;
+    padding-left: 30px;
+    justify-content: flex-end;
+    list-style: none;
+    font-family: Varela Round;
+    font-size: 16px;
+}
+
+.logo{
+    position: relative;
+    display: flex;
+    font-family: Sigmar One;
+    font-size: 85px;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    cursor: default;
+}
+
+.subline{
+    position: relative;
+    display: flex;
+    color: aliceblue;
+    font-family: Varela Round;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.search{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+input{
+    width: 765px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 40px;
+    border-color: transparent;
+    box-shadow: 0px 0px 5px black;
+    cursor: text;
+}
+
+input,
+input::placeholder {
+    font: 18px/3 Varela Round;
+    color: #808080;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* Body */
+
+.body{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.container-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.card{
+    width: 570px;
+    height: 250px;
+    transition: transform 200ms ease;
+    border-radius: 10px;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.img-card{
+    height: 70%;
+    margin-bottom: 15px;
+    background-size: cover;
+    filter: brightness(80%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img1{
+    background-image: url('pics/dish-card.jpg');
+}
+
+.img2{
+    background-image: url('pics/dine-card.jpg');
+}
+
+.header-card{
+    color: #313131;
+    font-family: Varela Round;
+    font-size: 22px;
+}
+
+.subline-card{
+    color: #313131;
+    font-family: Varela Round;
+    font-size: 18px;
+}
+
+.collection{
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.col-text-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.col-header{
+    font-family: Varela Round;
+    font-size: 35px;
+    color: #313131;
+}
+
+.col-subline{
+    font-family: Varela Round;
+    font-size: 19px;
+    color: #616161;
+    padding-top: 10px;
+}
+
+.col-link{
+    bottom: 0;
+    width: auto;
+}
+
+.pink-link{
+    text-decoration: none;
+    color: #ff8383;
+    font-family: Varela Round;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pink-link:hover{  /*global css */
+    color: #ff4444;
+}
+
+.col-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    display: flex;
+    height: 350px;
+    width: 270px;
+    border-radius: 10px;
+    align-items:flex-end;
+    transition: transform 200ms ease-in-out;
+}
+
+.col:hover{
+    transform: scale(1.05);
+}
+
+.col-card-text{
+    padding: 20px;
+}
+
+.col1{
+    background-image: linear-gradient(#a0a0a0, #000000), url("pics/navratri-tahli.jpg");
+    background-size: cover;
+    background-blend-mode:hard-light;
+}
+
+.col2{
+    background-image: linear-gradient(#a0a0a0, #000000), url("pics/open.jpg");
+    background-size: cover;
+    background-blend-mode:hard-light;
+}
+
+.col3{
+    background-image: linear-gradient(#a0a0a0, #000000), url("pics/best-of-ahmedabad.jpg");
+    background-size: cover;
+    background-blend-mode:hard-light;
+}
+
+.col4{
+    background-image: linear-gradient(#a0a0a0, #000000), url("pics/trending.jpg");
+    background-size: cover;
+    background-blend-mode:hard-light;
+}
+
+.incol-header{
+    color: white;
+    font-family: Varela Round;
+    font-size: 18px;
+}
+
+.incol-subline{
+    color: white;
+    font-family: Varela Round;
+}
+
+/* Locality */
+
+.locality .local-text{
+    font-family: Varela Round;
+    font-size: 35px;
+    color: #313131;
+}
+
+.cell-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:space-evenly;
+    margin-top: 30px;
+}
+
+.cell-container{
+    display: flex;
+    width: 100%;
+    position: relative;
+    max-width: 33.3333%;
+}
+
+.cell{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.see-more{
+    justify-content: center;
+}
+
+.incell-title{
+    color: #616161;
+    font-size: 22px;
+}
+
+.cell:hover .incell-title{
+    color: #313131;
+}
+
+.incell-subline{
+    color: #707070;
+}
+
+.get-container{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 50%;
+    align-items: center;
+}
+
+.get-radio-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.get-radio{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    box-shadow: none;
+    cursor: default;
+    background: url("radio.gif") no-repeat;
+}
+
+.get-radio-text{
+    margin: 10px;
+}
+
+.get-title{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.get-subline{
+    font-size: 18px;
+    margin: 10px;
+}
+
+.explore{
+    margin-top: 60px;
+    color: #313131;
+}
+
+.explore-title{
+    font-size: 35px;
+    margin-bottom: 70px;
+}
+
+.explore-cell-section{
+    margin-top: 20px;
+    display: flex;
+    width: 70%;
+    height: 50px;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.explore-cell-text{
+    color: #616161;
+}
+
+.explore-cell-section:hover .explore-cell-text{
+    color: #313131;
+}
